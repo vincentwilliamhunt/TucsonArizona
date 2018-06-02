@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
      * if so.
      */
     public int QuestionThree() {
+        CheckBox phoenix = (CheckBox) findViewById(R.id.phoenix);
+        boolean phoenixIsChecked = phoenix.isChecked();
         CheckBox gilaMonster = (CheckBox) findViewById(R.id.gila_monster);
         boolean gilaMonsterIsChecked = gilaMonster.isChecked();
         CheckBox coyote = (CheckBox) findViewById(R.id.coyote);
@@ -70,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
         CheckBox javelina = (CheckBox) findViewById(R.id.javelina);
         boolean javelinaIsChecked = javelina.isChecked();
 
-        if (gilaMonsterIsChecked && coyoteIsChecked && javelinaIsChecked) {
+        if (gilaMonsterIsChecked && coyoteIsChecked && javelinaIsChecked && !phoenixIsChecked) {
+            //returns 1 point if the gila, javelina, coyote is checked, and if phoenix is not
             return 1;
         }
         else {
@@ -107,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void SubmitQuiz(View view) {
 
-        int questionOnePoint = QuestionOne();
+        int questionOnePoint = QuestionOne(); //calls and checks Q1 and assigns points if correct
         Log.d("MainActivity", "Days : " + questionOnePoint);
         int questionTwoPoint = QuestionTwo();
         Log.d("MainActivity", "Saguaro : " + questionTwoPoint);

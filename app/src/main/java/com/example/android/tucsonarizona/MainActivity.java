@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
     public int QuestionTwo() {
         EditText cactus = (EditText) findViewById(R.id.cactus);
         String inputCactus = cactus.getText().toString();
-        inputCactus = inputCactus.toLowerCase();
-        inputCactus = inputCactus.trim();
+        inputCactus = inputCactus.toLowerCase(); //convert input to lower case
+        inputCactus = inputCactus.trim(); //trim whitespace before and after the string
         Log.d("MainActivity", "QuestionTwo: " + inputCactus);
 
         if (inputCactus.equals("saguaro")) {

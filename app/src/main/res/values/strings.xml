@@ -21,4 +21,6 @@
     <string name="False">false</string>
     <string name="zero">0</string>
     <string name="submit">submit</string>
+    <string name="toast_one">You scored </string>
+    <string name="toast_two"> out of 4 points!</string>
 </resources>

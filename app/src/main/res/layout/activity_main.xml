@@ -29,6 +29,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tucson_arizona_quiz" />
 
+            <View
+                style="@style/Line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
             <TextView
                 style="@style/Body"
                 android:layout_width="wrap_content"
@@ -61,6 +66,11 @@
 
             </RadioGroup>
 
+            <View
+                style="@style/Line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
             <TextView
                 style="@style/Body"
                 android:layout_width="wrap_content"
@@ -81,6 +91,11 @@
                 android:hint="@string/cactus"
                 android:layout_marginLeft="20dp"
                 android:inputType="text"/>
+
+            <View
+                style="@style/Line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
 
             <TextView
                 style="@style/Body"
@@ -103,7 +118,7 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/zebra"/>
+                    android:text="@string/phoenix"/>
 
                 <CheckBox
                     android:id="@+id/coyote"
@@ -118,6 +133,11 @@
                     android:text="@string/javelina"/>
 
             </LinearLayout>
+
+            <View
+                style="@style/Line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
 
             <TextView
                 style="@style/Body"
@@ -144,6 +164,11 @@
                     android:layout_marginLeft="16dp"/>
 
             </RadioGroup>
+
+            <View
+                style="@style/Line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
 
             <TextView
                 android:id="@+id/score_text_view"
